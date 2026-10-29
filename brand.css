@@ -1,0 +1,91 @@
+/* Shared red/white identity, matched to the supplied LinkIn reference. */
+:root{
+  --brand:#a5162a;
+  --brand-dark:#861122;
+  --brand-logo-red:#bd0120;
+  --brand-soft:#fff1f2;
+  --brand-border:#f0cbd2;
+  --bg:#fffafa;
+  --paper:#ffffff;
+  --white:#ffffff;
+  --ink:#292524;
+  --muted:#78716c;
+  --line:#e7e5e4;
+  --wine:var(--brand);
+  --wine-dark:var(--brand-dark);
+  --rose:var(--brand-soft);
+  --shadow:0 2px 8px #29252408;
+}
+body{background:var(--bg)}
+::selection{background:#f8cdd4;color:#721021}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline-color:var(--brand)}
+.brand{color:var(--brand)}
+.brand-mark{width:45px;height:47px;padding:2px;flex-shrink:0;background:#fff;border:1px solid var(--brand-border);border-radius:11px}
+.brand-mark img,.brand-logo{display:block;width:100%;height:100%;object-fit:contain}
+.boot-logo{display:block;width:76px;height:76px;object-fit:contain;margin:0 auto}
+.brand small{color:var(--muted)}
+.sidebar,.topbar,.top{background:#fff}
+.sidebar-note{background:#fffafa}
+.nav-button.active{background:var(--brand-soft);color:var(--brand)}
+.nav-button:hover:not(.active){background:#faf7f7}
+.avatar{background:#fbe4e8;color:var(--brand)}
+/* One account style for the home page and the four-stage workbench. */
+:is(.global-header,.top) .account-control{position:relative;display:flex;flex-direction:row;align-items:center;gap:12px;cursor:pointer;padding:5px 0 5px 8px;border:0;border-radius:8px;background:transparent;transition:background .15s;text-decoration:none;color:inherit}
+.account-control:hover{background:#faf7f7}.account-control:focus-within{outline:2px solid var(--wine);outline-offset:4px}
+.account-copy{display:flex;flex-direction:column;align-items:flex-start;text-align:left;gap:4px;line-height:1.3}.account-name-line{display:flex;align-items:center;gap:6px}.account-copy strong{color:#393334;font-size:13px;font-weight:600;letter-spacing:.3px}.account-copy small{color:#91878a;font-size:10px;font-weight:400;white-space:nowrap}.account-chevron{display:block;width:12px;height:12px;color:#92868a;flex-shrink:0}
+.account-control .avatar{order:2;display:flex;align-items:center;justify-content:center;width:36px;height:36px;box-sizing:border-box;border:1px solid #eadde0;border-radius:50%;font-size:14px;font-weight:500;background:#fcf8f9;color:#a31630;flex-shrink:0}
+.account-control .profile-select{position:absolute;inset:0;width:100%;height:100%;max-width:none;opacity:0;cursor:pointer;margin:0}
+.workspace-account{flex-shrink:0}.top .top-links{flex-direction:row;align-items:center}
+@media(max-width:520px){:is(.global-header,.top) .account-control{gap:9px;padding:4px 0 4px 5px}.account-copy strong{font-size:12px}.account-copy small{font-size:9px}.account-control .avatar{width:32px;height:32px;font-size:13px}}
+@media(max-width:380px){.top{padding:12px;gap:8px}.top .brand{gap:6px}.top .brand-copy strong{font-size:16px}.top .brand-copy small{font-size:7px;letter-spacing:1px}.top .brand-logo{width:32px;height:34px}.top .account-copy small{max-width:88px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.top .account-control{gap:7px;padding-left:4px}.top .top-links{gap:6px}}
+.hero{background:var(--brand);border-color:var(--brand);color:#fff}
+.hero h1,.hero .eyebrow,.hero p,.hero .hero-note{color:#fff!important}
+.hero .eyebrow{opacity:.86}
+.hero .hero-note{opacity:.78}
+.hero-art{border-left-color:#ffffff45}
+.hero-art .large-arrow,.hero .journey-mini,.hero .journey-mini span{color:#fff}
+.reason-box,.excluded-list,.check-result,.details-box pre,.schedule-table th{background:#faf7f7}
+.reason-box strong,.activity-type,.selected-schedule-heading>span{color:var(--brand)}
+.activity-art{background:#fcebed;color:var(--brand)}
+.activity-art.tone-1{background:#f8f1f1;color:#a15d67}
+.activity-art.tone-2{background:#f7e6ea;color:#a13750}
+.btn.secondary,.btn.saved,.check-chip:has(input:checked){background:var(--brand-soft);border-color:var(--brand-border);color:var(--brand)}
+.btn:hover:not(:disabled){border-color:#c95a6c;background:#fff6f7}
+.btn.primary:hover:not(:disabled){background:var(--brand-dark);border-color:var(--brand-dark)}
+.btn.primary{background:var(--brand);border-color:var(--brand);color:#fff}
+.check-chip,.sidebar-note,.chat-bubble,.question-button{background:#fffafa}
+.plan-card.selected{background:#fff5f6;border-color:var(--brand)}
+.selected-schedule{background:#fff;border-color:var(--line)}
+.fixed-course-note{background:#f5f2f2}
+.chat-avatar{background:#fbe5e9;color:var(--brand)}
+.chat-line.user .chat-bubble{background:var(--brand);color:#fff}
+.chat-composer,.claims{background:#fcf8f8}
+.top .brand{display:flex;align-items:center;gap:10px;line-height:1.3}
+.top .brand-copy{display:flex;flex-direction:column;align-items:flex-start}
+.top .brand-copy strong{font-size:21px;letter-spacing:1px;line-height:1.2}
+.top .brand-copy small{display:block;font-size:10px;font-weight:400;letter-spacing:1.6px;line-height:1.4;margin-top:4px}
+@media(max-width:480px){.top .brand-copy strong{font-size:18px}.top .brand-copy small{font-size:8px;letter-spacing:1.3px}}
+.top .brand-logo{width:46px;height:46px;flex-shrink:0;padding:2px;border:1px solid var(--brand-border);border-radius:11px;background:#fff}
+.intro{padding:27px 30px;border-radius:16px;background:var(--brand);color:#fff}
+.intro h1,.intro .eyebrow,.intro p:last-child{color:#fff}
+.intro p:last-child{opacity:.9}
+.intro .demo-pill{background:#ffffff17;color:#fff;border:1px solid #ffffff50}
+.step.active{background:var(--brand-soft);border-color:var(--brand);color:var(--brand)}
+.step b,.versionbar,.metric,.paint-tools button,.calendar .time-label,.cell,.history-meta div,pre{background:#faf6f6}
+.step.active b,.metric.accent{background:var(--brand)}
+.panel.tint,.direction.selected{background:#fff4f5}
+.direction,.course{background:#fff}
+.direction.selected{border-color:var(--brand)}
+.version-values,.paint-tools button,.course .schedule{color:#706765}
+.versionbar{border-color:#eddee1}
+.button.ghost{border-color:#d6a6af}
+.button:hover:not(:disabled){background:var(--brand-dark);border-color:var(--brand-dark);color:#fff}
+.button.ghost:hover:not(:disabled){background:var(--brand-soft);border-color:var(--brand);color:var(--brand)}
+.cell.unavailable{background:#f3c3cb;color:#87192c}
+.cell.prefer_free{background:#f2dfa9;color:#826327}
+.cell .campus{background:#e7d9ef;color:#654f79}
+.cell .campus.city{background:#cce0e4;color:#366673}
+/* Keep pass/review/fail and campus colors distinct from the primary brand. */
+@media(max-width:960px){.brand-mark{width:40px;height:42px}.intro{padding:23px 24px}}
+@media(max-width:480px){.top .brand{gap:7px}.top .brand-logo{width:38px;height:40px}.intro{padding:22px 20px}.brand-mark{width:37px;height:39px}}
+@media(max-width:380px){.top{flex-wrap:wrap}.top .brand-logo{width:32px;height:34px}.top .top-links{margin-left:auto}}

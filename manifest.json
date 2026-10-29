@@ -53,7 +53,7 @@
     "course-explorer.js": "db131d02444fc8e76b70a58a3bb8a433f577f7638e1c0e86fed05632dd3e3d6b",
     "four-stage.css": "e163ba1c483e4dc8d41c4992f15677fe0a7a2f8e25684afe0e956b18ae4fd28f",
     "four-stage.js": "d4de86c4e81a61dba32ae8aa51dba0c09072afebe1fd966c6b202aa87db6d66f",
-    "index.html": "da93b2dcd87d02740869307a9856e112b8f8eed213b5a98baa42e4d8329b0dfe",
+    "index.html": "71e26a8e60d5dff0c3afcc85c239f9cd333d9596a80f3c18494a77496ee650cc",
     "learning-support.js": "ac6d0974dd77390460bfc7b3c7d8054766afeaedea1170e525eb40b40437558c",
     "pages-bridge.js": "c976efd2dd569156948a49ce8a12f2bbcde1febef12ba6bc9d9a1317a595c6d5",
     "pages-worker.mjs": "c953d9288082d8924411056078e3d45a3881cf73b33de1b32d01b5c25d78a851",
@@ -64,8 +64,8 @@
     "README.md": "e1f14f313f07392bddfacd8287e5844b9ac3d6f0017eec0d3f1ba0ec668b0fd4",
     "runtime.zip": "1449d961a5bdb41f2ad882f55dcf519dece3d19b151bec48269ad6b786a0c8f9",
     "styles.css": "8691c2208b1db62bb623d8350fccf73ad1d4447ada94c2e5cf5624dacf778d9c",
-    "course-explorer/index.html": "8d95329f14063a3b25b83d583c3626c3f9d4ea76833ccfbaf58c8499f9f985f1",
-    "four-stage/index.html": "102cd9df58fe1d608d6ed2479be47b9faa8716c98f279d3226e98fa0e2b76bab",
-    "service-info/index.html": "224dc404662207caf370c0053849fca79e1946ea11b4640935631039a9790492"
+    "course-explorer/index.html": "85befda43fe5f75bef3112981a0c16be94f2e33bccfeb7d152782aa0d726ca33",
+    "four-stage/index.html": "6ccf78b589c72c330fcb3c1a7b7d19baf3b65b9647b380bb1c3201357566ac8f",
+    "service-info/index.html": "4a9ea67ec94ca92c60ec0a971e5c22408220f3254c5ef1f19e446ca476b399c9"
   }
 }

@@ -7,16 +7,16 @@
     *{box-sizing:border-box}body{margin:0;font:15px/1.9 "Segoe UI","Microsoft JhengHei",sans-serif;color:#292524;background:#fffafa}header,main{max-width:850px;margin:auto;padding:24px}header{display:flex;align-items:center;justify-content:space-between;gap:20px}header img{width:35px;vertical-align:middle;margin-right:8px}a{color:#a5162a;text-underline-offset:4px}nav{display:flex;gap:20px;flex-wrap:wrap;margin:24px 0}h1{font-size:29px;margin:0}h2{font-size:21px}section{scroll-margin-top:22px;border-top:1px solid #e7e5e4;padding:18px 0 26px}li{margin-bottom:12px}.muted{font-size:12px;color:#78716c}footer{padding:18px 0 35px;font-size:12px;color:#78716c}a:focus-visible{outline:2px solid #a5162a;outline-offset:5px}
   </style>
 </head>
-<body><aside id="pages-notice" role="status">公開展示版 · 合成學籍，無個人修課資料。首次載入規劃工具需要一點時間…</aside>
+<body><aside id="pages-notice" role="status">公開展示版 · 僅含合成學籍與公開課程 · Gemini／PDF 未啟用</aside>
   <header><a href="/scu-course-compass/" style="text-decoration:none"><img src="/scu-course-compass/brand-logo.png" alt="">職涯導航</a><a href="/scu-course-compass/four-stage/">回到修課規劃</a></header>
-  <main><h1>服務說明</h1><p class="muted">公開展示版（瀏覽器內執行，未連線 Gemini） · 更新於 2026 年 10 月 28 日</p>
+  <main><h1>服務說明</h1><p class="muted">公開展示版（瀏覽器內執行，未連線 Gemini） · 更新於 2026 年 10 月 29 日</p>
     <nav aria-label="服務說明目錄"><a href="#terms">使用條款</a><a href="#disclaimer">免責聲明</a><a href="#privacy">資料使用</a></nav>
     <section id="terms"><h2>使用條款</h2><ul>
       <li><strong>服務用途：</strong>提供活動探索、學涯討論準備與修課規劃。這裡的儲存、確認及匯出，不會替你完成學校選課、抵免或畢業申請。</li>
       <li><strong>資料權限：</strong>僅使用本人資料或已取得授權的內容。請勿提供他人帳密、冒用身分，或未經同意散布他人的學籍與對話。</li>
       <li><strong>討論禮貌：</strong>學涯意見供你思考與選擇，請尊重討論對象的時間及個人經驗，不將建議視為錄取、就業或學分認列的保證。</li>
       <li><strong>測試功能：</strong>輔導對象為明確標示的範例；問題與筆記只在本機瀏覽分頁保存，不會自動送給真人，也沒有真人訊息或通知服務。</li>
-      <li><strong>AI 功能：</strong>僅供年滿 18 歲使用。送出問題前，請確認內容可以交由 Google 處理，並遵守其<a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener noreferrer">Gemini API 條款</a>。</li>
+      <li><strong>AI 功能：</strong>本展示的意圖與方向使用內建示範，不呼叫 Gemini，也不會將輸入交由 Google AI 處理。</li>
     </ul></section>
     <section id="disclaimer"><h2>免責聲明</h2><ul>
       <li><strong>畢業與資格：</strong>進度與缺口依保存的報表及課規比對，正式採計仍以學校核定為準。同名科目、全學年課程、外系、抵免及實習不會在證據不足時自動認列。</li>
@@ -25,10 +25,10 @@
       <li><strong>範例與外部連結：</strong>示範人物、名單與課表不代表實際可申請或已取得對方同意；外部網站的服務與資料由各該網站提供。</li>
     </ul><p class="muted">以上說明界定測試版功能及參考範圍，不主張排除依法不得排除的責任或使用者權利。</p></section>
     <section id="privacy"><h2>資料使用</h2><ul>
-      <li><strong>個人修課資料：</strong>原始報表與匯入版本保存在本機專案的私人資料區。私人進度表不會自動附加到 AI 對話、真人討論草稿或示範學籍。</li>
-      <li><strong>AI 對話：</strong>你主動送出的文字、最近對話與目前示範情境，會交由 Google AI 處理。供應商的使用、保留與處理方式請查閱其<a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener noreferrer">服務條款</a>及<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">隱私政策</a>。</li>
-      <li><strong>討論草稿與筆記：</strong>以帳號區分，保存在目前瀏覽分頁的 sessionStorage；關閉分頁後可能消失，不會同步到其他裝置。清除瀏覽器資料不會刪除專案內的修課資料庫及版本。</li>
-      <li><strong>校務帳密：</strong>本機下載工具只在當次連線的記憶體中使用，不寫入修課版本或前端頁面。請勿將帳密填入 AI 問題或討論筆記。</li>
+      <li><strong>個人修課資料：</strong>本展示未匯入任何個人修課報表；只有合成學籍及校方公開課程。個人進度匯入與校務系統登入未開放。</li>
+      <li><strong>AI 對話：</strong>文字由瀏覽器內的示範程式處理，未連接 Google AI。載入網站與執行環境時，瀏覽器會連線至 GitHub Pages 及 jsDelivr CDN。</li>
+      <li><strong>討論草稿與筆記：</strong>草稿與筆記以帳號區分，保存在目前分頁的 sessionStorage；課表與規劃版本保存在此瀏覽器的 IndexedDB。關閉分頁可能失去草稿，清除網站資料會移除展示課表與版本；不會同步至其他裝置。</li>
+      <li><strong>校務帳密：</strong>本展示不提供校務帳密登入或保存功能。請勿將帳密、個人學號、真實成績或他人的個資填入問題與筆記。</li>
     </ul></section>
     <footer><a href="/scu-course-compass/">回首頁</a> · <a href="/scu-course-compass/four-stage/">修課規劃</a></footer>
   </main>
